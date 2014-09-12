@@ -1,0 +1,12 @@
+D:\project#\login\login\bin\x86\Debug\login.exe.config
+D:\project#\login\login\obj\x86\Debug\login.Form1.resources
+D:\project#\login\login\obj\x86\Debug\login.Properties.Resources.resources
+D:\project#\login\login\obj\x86\Debug\login.csproj.GenerateResource.Cache
+D:\project#\login\login\bin\x86\Debug\login.exe
+D:\project#\login\login\bin\x86\Debug\login.pdb
+D:\project#\login\login\bin\x86\Debug\HtmlAgilityPack.dll
+D:\project#\login\login\bin\x86\Debug\HtmlAgilityPack.pdb
+D:\project#\login\login\bin\x86\Debug\HtmlAgilityPack.xml
+D:\project#\login\login\obj\x86\Debug\login.exe
+D:\project#\login\login\obj\x86\Debug\login.pdb
+D:\project#\login\login\obj\x86\Debug\login.csprojResolveAssemblyReference.cache
