@@ -18,25 +18,27 @@ namespace DwarAuctionAnalyzer
 {
     public partial class Form1 : Form
     {
-        private bool finishedLoading = false;
+        public WebView browser;
         public Form1()
         {
             InitializeComponent();
+            browser = WebCore.CreateWebView(800, 600, WebViewType.Offscreen);
+            browser.Source = new Uri("http://w1.dwar.ru/");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            API.login(webControl1);
+            API.login(browser);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            API.copyAuctionCategories(webControl1);
+            API.copyAuctionCategories(browser);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            API.scanItem(webControl1);
+            API.scanItem(browser);
         }
 
     }

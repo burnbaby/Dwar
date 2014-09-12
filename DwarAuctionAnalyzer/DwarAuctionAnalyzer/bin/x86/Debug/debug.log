@@ -764,3 +764,20 @@
 [0912/200615:INFO:(0)] Running Awesomium 1.7.4.2
 [0912/211317:INFO:(0)] WebCore is now online.
 [0912/211317:INFO:(0)] Running Awesomium 1.7.4.2
+[0912/233052:INFO:(0)] WebCore is now online.
+[0912/233052:INFO:(0)] Running Awesomium 1.7.4.2
+[0912/235136:INFO:(0)] WebCore is now online.
+[0912/235136:INFO:(0)] Running Awesomium 1.7.4.2
+[0912/235142:ERROR:ipc_channel_win.cc(261)] pipe error: 109
+[0912/235151:INFO:(0)] WebCore is now online.
+[0912/235151:INFO:(0)] Running Awesomium 1.7.4.2
+[0913/000313:INFO:(0)] WebCore is now online.
+[0913/000313:INFO:(0)] Running Awesomium 1.7.4.2
+[0913/000425:INFO:(0)] WebCore is now online.
+[0913/000425:INFO:(0)] Running Awesomium 1.7.4.2
+[0913/002232:INFO:(0)] WebCore is now online.
+[0913/002232:INFO:(0)] Running Awesomium 1.7.4.2
+[0913/005520:INFO:(0)] WebCore is now online.
+[0913/005520:INFO:(0)] Running Awesomium 1.7.4.2
+[0913/011303:INFO:(0)] WebCore is now online.
+[0913/011303:INFO:(0)] Running Awesomium 1.7.4.2
