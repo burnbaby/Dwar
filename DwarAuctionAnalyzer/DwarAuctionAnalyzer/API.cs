@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace DwarAuctionAnalyzer
 {
-    class API
+    static class API
     {
         private static bool finishedLoading = false;
         public static void login (WebControl webControl1)
@@ -63,7 +63,7 @@ namespace DwarAuctionAnalyzer
         {
             for (var i = 0; i < categories.length; i++)
             {
-                command.CommandText = "REPLACE INTO categories (browserValue, categoryName) VALUES(@browserValue,@categoryName)";//" + (string)categories[i].firstChild.nodeValue + "
+                command.CommandText = "REPLACE INTO categories (browserValue, categoryName) VALUES(@browserValue,@categoryName)";
                 command.Parameters.AddWithValue("@browserValue", categories[i].getAttribute("value"));
                 if (command.Parameters[0].Value.ToString().Length < 10 && command.Parameters[0].Value != "")
                 {
@@ -91,14 +91,7 @@ namespace DwarAuctionAnalyzer
                 MessageBox.Show(exception.Message);
             }
         }
-        private static void loadPage()
-        {
-            while (!finishedLoading)
-            {
-                WebCore.Update();
-            }
-            finishedLoading = false;
-        }
+
         private static void addItems(JSValue itemData, MySqlCommand command)
         {
             if (!itemData.IsUndefined)
@@ -120,7 +113,7 @@ namespace DwarAuctionAnalyzer
                 }
             }
         }
-        public static void scanItem(WebControl webControl1)
+        public static void scanItem()
         {
             try
             {
@@ -142,43 +135,34 @@ namespace DwarAuctionAnalyzer
                 {
                     int i = 0;
                     command.Connection = connection2;
-                    webControl1.LoadingFrameComplete += Awesomium_Windows_Forms_WebControl_LoadingFrameComplete;
-                    webControl1.Source = new Uri("http://w1.dwar.ru/area_auction.php?&_filter%5Btitle%5D=&_filter%5Bcount_min%5D=&_filter%5Bcount_max%5D=&_filter%5Blevel_min%5D=&_filter%5Blevel_max%5D=&_filter%5Bkind%5D=" + reader[0] + "&_filter%5Bquality%5D=-1&_filterapply=%D0%9E%D0%BA&page=" + i);
-                    loadPage();
-
-                    JSValue itemData = webControl1.ExecuteJavascriptWithResult(itemsForDb);
+                    onUpdateWebControl(reader[0].ToString(),i);
+                   /* JSValue itemData = webControl1.ExecuteJavascriptWithResult(itemsForDb);
                     addItems(itemData, command);
 
                     JSValue pages = webControl1.ExecuteJavascriptWithResult(pagesNumber);
                     int number = Convert.ToInt32((int)pages);
                     for (; i < number; i++)
                     {
-                        webControl1.LoadingFrameComplete += Awesomium_Windows_Forms_WebControl_LoadingFrameComplete;
-                        webControl1.Source = new Uri("http://w1.dwar.ru/area_auction.php?&_filter%5Btitle%5D=&_filter%5Bcount_min%5D=&_filter%5Bcount_max%5D=&_filter%5Blevel_min%5D=&_filter%5Blevel_max%5D=&_filter%5Bkind%5D=" + reader[0] + "&_filter%5Bquality%5D=-1&_filterapply=%D0%9E%D0%BA&page=" + i);
-                        loadPage();
+
+                        onUpdateWebControl(reader, i);
 
                         itemData = webControl1.ExecuteJavascriptWithResult(itemsForDb);
                         addItems(itemData, command);
-                    }
+                    }*/
                     command.Connection = connection;
-                }
-                connection.Close();
-                connection2.Close();
-                reader.Close();
+                 }
+                 connection.Close();
+                 connection2.Close();
+                 reader.Close();
             }
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
             }
         }   
-        private static void Awesomium_Windows_Forms_WebControl_LoadingFrameComplete(object sender, FrameEventArgs e)
-        {
-            if (e.IsMainFrame)
-            {
-                finishedLoading = true;
-                ((WebControl)sender).LoadingFrameComplete -= Awesomium_Windows_Forms_WebControl_LoadingFrameComplete;
-            }
 
-        }
+
+        public delegate void MethodContainer(string category, int i);
+        public static event MethodContainer onUpdateWebControl;
     }
 }

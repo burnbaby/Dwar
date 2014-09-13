@@ -22,3 +22,15 @@ D:\project#\DwarAuctionAnalyzer\DwarAuctionAnalyzer\obj\x86\Debug\DwarAuctionAna
 D:\project#\DwarAuctionAnalyzer\DwarAuctionAnalyzer\obj\x86\Debug\DwarAuctionAnalyzer.Properties.Resources.resources
 D:\project#\DwarAuctionAnalyzer\DwarAuctionAnalyzer\obj\x86\Debug\DwarAuctionAnalyzer.csproj.GenerateResource.Cache
 D:\project#\DwarAuctionAnalyzer\DwarAuctionAnalyzer\obj\x86\Debug\DwarAuctionAnalyzer.csprojResolveAssemblyReference.cache
+D:\repository\DwarAuctionAnalyzer\DwarAuctionAnalyzer\bin\x86\Debug\DwarAuctionAnalyzer.exe.config
+D:\repository\DwarAuctionAnalyzer\DwarAuctionAnalyzer\obj\x86\Debug\DwarAuctionAnalyzer.exe
+D:\repository\DwarAuctionAnalyzer\DwarAuctionAnalyzer\obj\x86\Debug\DwarAuctionAnalyzer.pdb
+D:\repository\DwarAuctionAnalyzer\DwarAuctionAnalyzer\obj\x86\Debug\DwarAuctionAnalyzer.csprojResolveAssemblyReference.cache
+D:\repository\DwarAuctionAnalyzer\DwarAuctionAnalyzer\obj\x86\Debug\DwarAuctionAnalyzer.Form1.resources
+D:\repository\DwarAuctionAnalyzer\DwarAuctionAnalyzer\obj\x86\Debug\DwarAuctionAnalyzer.Properties.Resources.resources
+D:\repository\DwarAuctionAnalyzer\DwarAuctionAnalyzer\obj\x86\Debug\DwarAuctionAnalyzer.csproj.GenerateResource.Cache
+D:\repository\DwarAuctionAnalyzer\DwarAuctionAnalyzer\bin\x86\Debug\DwarAuctionAnalyzer.exe
+D:\repository\DwarAuctionAnalyzer\DwarAuctionAnalyzer\bin\x86\Debug\DwarAuctionAnalyzer.pdb
+D:\repository\DwarAuctionAnalyzer\DwarAuctionAnalyzer\bin\x86\Debug\HtmlAgilityPack.dll
+D:\repository\DwarAuctionAnalyzer\DwarAuctionAnalyzer\bin\x86\Debug\HtmlAgilityPack.pdb
+D:\repository\DwarAuctionAnalyzer\DwarAuctionAnalyzer\bin\x86\Debug\HtmlAgilityPack.xml
